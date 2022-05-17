@@ -26,27 +26,30 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="return show('play','rules');">Play</a>
+              <a class="nav-link btn-lg" href="#" onclick="return show('play','rules');">Play</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="return show('rules','play');">Rules</a>
+              <a class="nav-link btn-lg" href="#" id="openRules">Rules</a>
             </li>
           </ul>
         </div>
       </nav>
     <!--End of Nav Bar Section-->
 
-    <!--Start of Rules Section-->
-    <section id="rules">
-        <h1>This is the rules page</h1>
+    <!--Start of Play Section-->
+    <section id="play">
+      <h1>This is where you play the game</h1>
     </section>
-    <!--End of Rules Section-->
+    <!--End of Play Section-->
 
-    <!--Start of Rules Section-->
-    <section id="play" style="display:none">
-      <h1>This is the 2nd rules page</h1>
-    </section>
-    <!--End of Rules Section-->
+    <!--Start of Rules Modal Section-->
+    <div id="openRulesModal" class="modal" style="display:none">
+      <div id="rules" class="modal-content">
+        <span class="closeRulesModal">&times;</span>
+        <p>The rules will pop up here.</p>
+      </div>
+    </div>
+    <!--End of Rules Modal Section-->
 
     <!--Start of Footer-->
     <footer class="mt-auto">
