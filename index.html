@@ -21,7 +21,7 @@
 <body class="d-flex flex-column min-vh-100 min-vw-100"> <!--Max Height for Body and Pushes Footer Down--> <!--onload="usernameProvide()-->
 
     <!--Start Home Button Logo-->
-    <a href="#"><h1 class="text-center" id="home">Guess the Globe</h1></a>
+    <a href="#"><h1 class="text-center" id="home" onclick="startGame()">Guess the Globe</h1></a>
     <!--End Home Button Logo-->
 
     <!--Nav Bar straight from Bootstrap Docs = https://getbootstrap.com/docs/4.0/components/navbar/-->
@@ -71,8 +71,16 @@
     <!--Start of Rules Modal Section-->
     <div id="openRulesModal" class="modal" style="display:none">
       <div id="rules" class="modal-content">
-        <span class="closeRulesModal">&times;</span>
-        <p>The rules will pop up here.</p>
+        <div class="modal-header">
+          <span class="closeRulesModal">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <p>The rules will pop up here.</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
       </div>
     </div>
     <!--End of Rules Modal Section-->
