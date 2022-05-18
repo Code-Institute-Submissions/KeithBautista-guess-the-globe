@@ -183,3 +183,17 @@ img {
   font-size: 2rem;
 }
 
+.circle {
+  width: 75px;
+  height: 125px;
+  background: #013220;
+  margin: 10% auto;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+
+.content {
+  vertical-align: middle;
+}
+
