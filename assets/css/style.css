@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* These are the colors for when question is right or wrong or neutral*/
+/* Colors for when question is right or wrong or neutral*/
 :root {
   --hue-neutral: 200;
   --hue-wrong: 0;
@@ -40,6 +40,22 @@ body.correct {
 body.wrong {
   --hue: var(--hue-wrong);
 }
+
+.start.btn, .next.btn {
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
 
 /*Styling Answer Buttons as Grid*/
 .btn-grid {
