@@ -87,7 +87,7 @@ function setStatusClass(element, correct){
 const questions = [
     {
         question: 'What Country is this?',
-        image: 'Ireland',
+        image: "<img src='assets/images/dominica.png'>",
         answers: [
             {text: 'Ireland', correct: true},
             {text: 'Ivory Coast', correct: false},
@@ -98,7 +98,7 @@ const questions = [
     },
     {
         question: 'What Country is this?',
-        image: 'Germany',
+        image: "<img src='assets/images/dominica.png'>",
         answers: [
             {text: 'hrteshtrs', correct: true},
             {text: 'htrshtrsht', correct: false},
@@ -109,7 +109,7 @@ const questions = [
     },
     {
         question: 'What Country is this?',
-        image: 'Laos',
+        image: "<img src='assets/images/dominica.png'>",
         answers: [
             {text: 'htrdhtrdhrtd', correct: true},
             {text: 'j65jytdty jytdytd', correct: false},
@@ -120,7 +120,7 @@ const questions = [
     },
     {
         question: 'What Country is this?',
-        image: 'Finland',
+        image: "<img src='assets/images/dominica.png'>",
         answers: [
             {text: 'jytdmy', correct: true},
             {text: 'mytdmyt ytdfmytdfm', correct: false},

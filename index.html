@@ -21,7 +21,7 @@
 <body> <!--Max Height for Body and Pushes Footer Down--> <!--onload="usernameProvide()-->
 
     <!--Start Home Button Logo-->
-    <a href="#"><h1 class="text-center" id="home" onclick="startGame()">Guess the Globe</h1></a>
+    <a href="#"><h1 class="text-center" id="home" onClick="window.location.reload();">Guess the Globe</h1></a>
     <!--End Home Button Logo-->
 
     <!--Nav Bar straight from Bootstrap Docs = https://getbootstrap.com/docs/4.0/components/navbar/-->
@@ -46,7 +46,7 @@
     <!--Start of Play Section-->
     <div class="container-fluid play-section">
       <div class="row">
-        <div class="col-md-12 d-flex justify-content-center"></div>
+        <div class="col-md-12 d-flex justify-content-center">
           <div class="container"> <!--This container will include the main card for your questions-->
             <div id="question-container" class="hide"> <!--This is the question container which holds the questions as well as the buttons for answers-->
               <div id="question">This is a sample question</div>
@@ -58,7 +58,7 @@
                 <button class="btn">Answer 4</button>
               </div>
             </div>
-            <div class="controls"> <!--Provides Controls to be able to play game-->
+            <div class="controls justify-content-center"> <!--Provides Controls to be able to play game-->
               <button id="start-btn" class="start-btn btn">Start Button</button>
               <button id="next-btn" class="next-btn btn hide">Next Question</button>
             </div>

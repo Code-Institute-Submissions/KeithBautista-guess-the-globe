@@ -14,9 +14,10 @@
 .navbar {
   font-weight: 700;
   margin-bottom: 0;
-  background-color: #5cb85c;
+  background-color: #003f64;
   border: 0;
   font-size: 1.2rem;
+  padding: 20px;
 }
 
 body {
@@ -36,6 +37,8 @@ body {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 0 10px 5px;
+  margin-top: 10%;
+  margin-bottom: 10%;
 
 }
 
@@ -129,7 +132,7 @@ body {
   /*Header Styling*/
   .modal-header {
     padding: 4px 16px;
-    background-color: #5cb85c;
+    background-color: #003f64;
     color: white;
   }
   
@@ -137,15 +140,24 @@ body {
   
   .modal-footer {
     padding: 4px 16px;
-    background-color: #5cb85c;
+    background-color: #003f64;
     color: white;
   }
 
   #section-footer {
-    background-color: #5cb85c;
+    background-color: #003f64;
     padding: 20px;
     position: relative;
     width: 100%;
-    bottom: 0;
+    bottom: 0 !important;
     color: white;
   }
+
+  img {
+      height: 50%;
+      max-width: 50%;
+      display: block;
+      margin: auto;
+      }
+  
+
