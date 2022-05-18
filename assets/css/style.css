@@ -21,7 +21,7 @@ body {
   width: 100vh;
   height: 100vh;
   --hue: var(--hue-neutral); /*Set at neutral as question is neither wrong or correct yet*/
-  background-color: hsl(var(--hue),100%, 20%);
+  background-color: hsl(var(--hue),100%, 20%); /*If you want to only have the buttons turn color, remove this and change the background*/
 }
 
 .container {
@@ -33,11 +33,11 @@ body {
   box-shadow: 0 0 10px 5px;
 }
 
-body.correct {
+body.correct { /*If you want to only have the buttons turn color, remove this*/
   --hue: var(--hue-correct);
 }
 
-body.wrong {
+body.wrong { /*If you want to only have the buttons turn color, remove this*/
   --hue: var(--hue-wrong);
 }
 

@@ -9,6 +9,10 @@ const questionImageElement = document.getElementById('question-image')
 let shuffledQuestions, currentQuestionIndex 
 
 startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click' , () => {
+    currentQuestionIndex++ // Adding 1 to the currentQuestionIndex
+    setNextQuestion() //Calling the setNextQuestion to get next question
+})
 
 function startGame(){
     console.log('The Game has Begun')
@@ -54,6 +58,7 @@ function selectAnswer(e){
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
+    nextButton.classList.remove('hide') //We are removing the classlist hide to show nextButton
 }
 
 function setStatusClass(element, correct){
