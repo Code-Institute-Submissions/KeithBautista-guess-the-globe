@@ -35,6 +35,8 @@ window.onclick = function(event) {
 
 /*End of Rules Modal*/
 
+/* This is where you place in your name at the very beginning
+
 function usernameProvide(){
     document.getElementById("game-container").innerHTML = 
     `
@@ -51,3 +53,5 @@ function usernameProvide(){
     </div>
     `;
 }
+
+*/
