@@ -1,15 +1,13 @@
 const startButton = document.getElementById('start-btn')
+const questionContainerElement = document.getElementById('question-container')
 
 startButton.addEventListener('click', startGame)
 
 function startGame(){
-    console.log('game has started')
+    console.log('The Game has Begun')
+    startButton.classList.add('hide')// Here we are hiding the startGame Button for the moment
+    questionContainerElement.classList.remove('hide')//Question Container has hide class, we now remove it to show questions
 }
-
-
-
-
-
 
 
 /*Start of Show and Hide Sections found in StackOverFlow = https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file*/
