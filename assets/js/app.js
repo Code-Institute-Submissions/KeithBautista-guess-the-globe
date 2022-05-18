@@ -183,6 +183,33 @@ window.onclick = function(event) {
 
 /*End of Rules Modal*/
 
+/*Start of username Modal*/
+
+//Grab the Modal
+var usernameModal = document.getElementById('openUsernameModal');
+
+//Get the <span> element that closes the modal
+var closeUsernameModal = document.getElementsByClassName('closeUsernameModal')[0];
+
+//When the user clicks on the button, open the username Modal
+onload = function(){
+    usernameModal.style.display = "block";
+}
+
+//When the user clicks on <span> (x), then close the username Modal
+closeUsernameModal.onclick = function() {
+    usernameModal.style.display = "none";
+}
+
+//When the user clicks anywhere outside the usernameModal, then close it
+window.onclick = function(event) {
+    if (event.target == usernameModal) {
+    usernameModal.style.display = "none";
+    }
+}
+
+/*End of username Modal*/
+
 /* This is where you place in your name at the very beginning
 
 function usernameProvide(){

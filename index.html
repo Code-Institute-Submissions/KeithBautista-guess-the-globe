@@ -18,14 +18,27 @@
 
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
-<body> <!--Max Height for Body and Pushes Footer Down--> <!--onload="usernameProvide()-->
+<body onload="openNameInput()"> <!--Max Height for Body and Pushes Footer Down--> <!--onload="usernameProvide()-->
 
     <!--Start Home Button Logo-->
     <a href="#"><h1 class="text-center" id="home" onClick="window.location.reload();">Guess the Globe</h1></a>
     <!--End Home Button Logo-->
 
     <!--Start of Name Container-->
-    <div id="name-container">
+    <div class="modal" tabindex="-1" role="dialog" id="openUsernameModal">
+      <div class=".modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Rules of the game</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="closeUsernameModal">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!--End of Name Container-->
 
@@ -67,7 +80,7 @@
                 </div>
               </div>
               <div class="controls d-flex justify-content-center"> <!--Provides Controls to be able to play game-->
-                <button id="start-btn" class="start-btn btn">Press to Begin</button>
+                <button id="start-btn" class="start-btn btn" onclick="openNameInput()">Press to Begin</button>
               </div>
               <div>
                 <button id="next-btn" class="next-btn btn hide on" onClick="increaseProgressBar();">Next Question</button>
