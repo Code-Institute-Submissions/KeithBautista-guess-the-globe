@@ -33,12 +33,40 @@ body {
   box-shadow: 0 0 10px 5px;
 }
 
-.container.correct {
+body.correct {
   --hue: var(--hue-correct);
 }
 
-.container.wrong {
+body.wrong {
   --hue: var(--hue-wrong);
+}
+
+/*Styling Answer Buttons as Grid*/
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto); 
+  gap: 10px; 
+  margin: 20px 0;
+}
+
+/* Styling Answer Buttons*/
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid black;
+  background-color: hsl(var(--hue),100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong)
 }
 
 
