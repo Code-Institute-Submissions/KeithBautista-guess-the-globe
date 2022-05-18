@@ -44,6 +44,7 @@ function showQuestion(question){
 }
 
 function resetState(){
+    clearStatusClass(document.body) // To reset the color of background inbetween questions
     nextButton.classList.add('hide') // Hiding the next button while within the questions
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild
