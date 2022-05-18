@@ -56,6 +56,18 @@ function selectAnswer(e){
     })
 }
 
+function setStatusClass(element, correct){
+    clearStatusClass(element)
+    /*If correct we want to add correct class else add wrong class*/
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+}
+
+
+
 
 
 const questions = [
