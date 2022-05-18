@@ -1,13 +1,36 @@
 const startButton = document.getElementById('start-btn')
 const questionContainerElement = document.getElementById('question-container')
 
+
+const shuffledQuestions, currentQuestionIndex 
+
 startButton.addEventListener('click', startGame)
 
 function startGame(){
     console.log('The Game has Begun')
     startButton.classList.add('hide')// Here we are hiding the startGame Button for the moment
+    shuffledQuestions = questions.sort(() => Math.random() - .5)//Less than or more than 0 which will shuffle our questions for us
+    currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')//Question Container has hide class, we now remove it to show questions
+    setNextQuestion()// Here we set the next question for the user
 }
+
+const questions = [
+    {
+        question: 'What Country is this?',
+        image: ,
+        answers: [
+            {text: 'Ireland', correct: true},
+            {text: 'Ivory Coast', correct: false},
+            {text: 'Finland', correct: false},
+            {text: 'Greece', correct: false},
+            
+        ]
+    }
+]
+
+
+
 
 
 /*Start of Show and Hide Sections found in StackOverFlow = https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file*/
