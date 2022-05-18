@@ -58,7 +58,14 @@ function selectAnswer(e){
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    nextButton.classList.remove('hide') //We are removing the classlist hide to show nextButton
+    if (shuffledQuestions.length > currentQuestionIndex + 1) { 
+        /*If the shuffled questions amount is greater than current question amount then show next button 
+        else change text to restart and remove the hide button*/
+        nextButton.classList.remove('hide') //We are removing the classlist hide to show nextButton
+    } else {
+        startButton.innerHTML = 'Restart'
+        startButton.classList.remove('hide')
+    }
 }
 
 function setStatusClass(element, correct){
