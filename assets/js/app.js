@@ -1,8 +1,11 @@
 const startButton = document.getElementById('start-btn')
 const questionContainerElement = document.getElementById('question-container')
+const questionElement = document.getElementById('question')
+const answerButtonsElement = document.getElementById('answer-buttons')
+const questionImageElement = document.getElementById('question-image')
 
 
-const shuffledQuestions, currentQuestionIndex 
+let shuffledQuestions, currentQuestionIndex 
 
 startButton.addEventListener('click', startGame)
 
@@ -15,10 +18,19 @@ function startGame(){
     setNextQuestion()// Here we set the next question for the user
 }
 
+function setNextQuestion(){
+    showQuestion(shuffledQuestions[currentQuestionIndex])
+}
+
+function showQuestion(question){
+    questionElement.innerHTML = question.question
+    questionImageElement.innerHTML = question.image
+}
+
 const questions = [
     {
         question: 'What Country is this?',
-        image: ,
+        image: 'Ireland',
         answers: [
             {text: 'Ireland', correct: true},
             {text: 'Ivory Coast', correct: false},
