@@ -1,4 +1,5 @@
 const startButton = document.getElementById('start-btn')
+const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
@@ -19,12 +20,35 @@ function startGame(){
 }
 
 function setNextQuestion(){
+    resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
 function showQuestion(question){
-    questionElement.innerHTML = question.question
-    questionImageElement.innerHTML = question.image
+    questionElement.innerHTML = question.question // Changes Question Text
+    questionImageElement.innerHTML = question.image // Changes Question Image
+    question.answers.forEach(answer => {
+        const button = document.createElement('button')
+        button.innerHTML = answer.text // Changes Question Answer
+        button.classList.add('btn') // Change the classlist of button to btn
+        if (answer.correct) { 
+            button.dataset.correct = answer.correct // Only set to true
+        }
+        button.addEventListener('click', selectAnswer)
+        answerButtonsElement.appendChild(button)
+    })
+}
+
+function resetState(){
+    nextButton.classList.add('hide') // Hiding the next button while within the questions
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild
+        (answerButtonsElement.firstChild)
+    }
+}
+
+function selectAnswer(e){
+
 }
 
 const questions = [
