@@ -34,3 +34,20 @@ window.onclick = function(event) {
 }
 
 /*End of Rules Modal*/
+
+function usernameProvide(){
+    document.getElementById("game-container").innerHTML = 
+    `
+    <div class="username-menu">
+    <form action ="#">
+        <div class="form">
+        <span id="usernameBackButton" tabindex="0">&times;</span>
+        <span id="usernameError"></span>
+        <label for="name">Enter player name:</label>
+        <input type="text" id="username" name="username">
+        </div>
+        <button type="submit" id="beginBtn">Begin Quiz</button>
+    </form>
+    </div>
+    `;
+}

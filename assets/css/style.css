@@ -52,4 +52,9 @@ body {
     cursor: pointer;
   }
 
-  
+  #game-container {
+      margin: 25vh;
+      width: 60%;
+      padding: 10px;
+      align-content: center;
+  }
