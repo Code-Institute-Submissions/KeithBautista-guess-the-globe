@@ -1,3 +1,17 @@
+const startButton = document.getElementById('start-btn')
+
+startButton.addEventListener('click', startGame)
+
+function startGame(){
+    console.log('game has started')
+}
+
+
+
+
+
+
+
 /*Start of Show and Hide Sections found in StackOverFlow = https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file*/
 function show(shown, hidden) {
   document.getElementById(shown).style.display='block';
