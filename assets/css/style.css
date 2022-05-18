@@ -4,20 +4,41 @@
   box-sizing: border-box;
 }
 
-.container {
+/* These are the colors for when question is right or wrong or neutral*/
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  font-family: 'Mina', sans-serif;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vh;
+  height: 100vh;
+  --hue: var(--hue-neutral); /*Set at neutral as question is neither wrong or correct yet*/
+  background-color: hsl(var(--hue),100%, 20%);
 }
 
-body {
-    font-family: 'Mina', sans-serif;
-    background-image: url('assets/images/backgroundGlobe.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
+.container {
+  background-color: white;
+  width: 800px;
+  max-width: 80%;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 5px;
+}
+
+.container.correct {
+  --hue: var(--hue-correct);
+}
+
+.container.wrong {
+  --hue: var(--hue-wrong);
 }
 
 
@@ -62,5 +83,3 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
-
-  

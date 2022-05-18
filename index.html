@@ -15,7 +15,7 @@
 
 
 </head>
-<body class="d-flex flex-column min-vh-100"> <!--Max Height for Body and Pushes Footer Down--> <!--onload="usernameProvide()-->
+<body class="d-flex flex-column min-vh-100 min-vw-100"> <!--Max Height for Body and Pushes Footer Down--> <!--onload="usernameProvide()-->
 
     <!--Start Home Button Logo-->
     <a href="#"><h1 class="text-center" id="home">Guess the Globe</h1></a>
@@ -41,7 +41,7 @@
     <!--End of Nav Bar Section-->
 
     <!--Start of Play Section-->
-    <div class="container"> <!--This container will include the main card for your questions-->
+    <div class="container wrong"> <!--This container will include the main card for your questions-->
       <div id="question-container" class="hide"> <!--This is the question container which holds the questions as well as the buttons for answers-->
         <div id="question">This is a sample question</div>
         <div id="answer-buttons" class="btn-grid"> <!--Grid for Answers to style with CSS-->
@@ -54,7 +54,6 @@
       <div class="controls"> <!--Provides Controls to be able to play game-->
         <button id="start-btn" class="start-btn btn">Start Button</button>
         <button id="next-btn" class="next-btn btn hide">Next Question Button</button>
-
       </div>
     </div>
     <!--End of Play Section-->
