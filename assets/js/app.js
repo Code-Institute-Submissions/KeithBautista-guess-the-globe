@@ -4,6 +4,7 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const questionImageElement = document.getElementById('question-image')
+var progressBarValue = 0;
 
 
 let shuffledQuestions, currentQuestionIndex 
@@ -21,11 +22,21 @@ function startGame(){
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')//Question Container has hide class, we now remove it to show questions
     setNextQuestion()// Here we set the next question for the user
+    document.getElementById('progressBar').style.width = (0 + '%')
+
 }
+
 
 function setNextQuestion(){
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
+    
+}
+
+function increaseProgressBar (){
+    progressBarValue += 10;
+    document.getElementById('progressBar').style.width = (progressBarValue + '%')
+    console.log(progressBarValue)
 }
 
 function showQuestion(question){

@@ -24,6 +24,13 @@
     <a href="#"><h1 class="text-center" id="home" onClick="window.location.reload();">Guess the Globe</h1></a>
     <!--End Home Button Logo-->
 
+    <!--Start of Name Container-->
+    <div id="name-container">
+    </div>
+    <!--End of Name Container-->
+
+
+
     <!--Nav Bar straight from Bootstrap Docs = https://getbootstrap.com/docs/4.0/components/navbar/-->
     <nav class="navbar navbar-expand-md navbar-light"></div>
         <a class="navbar-brand" href="#"></a>
@@ -63,7 +70,7 @@
                 <button id="start-btn" class="start-btn btn">Press to Begin</button>
               </div>
               <div>
-                <button id="next-btn" class="next-btn btn hide">Next Question</button>
+                <button id="next-btn" class="next-btn btn hide on" onClick="increaseProgressBar();">Next Question</button>
               </div>
             </div>
           </div>
@@ -74,7 +81,7 @@
 
     <!--Start of Progress Bar-->
     <div class="progress">
-      <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+      <div class="progress-bar bg-success" id='progressBar' role="progressbar" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
     <!--End of Progress Bar-->
 
