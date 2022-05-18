@@ -87,6 +87,39 @@ const questions = [
             {text: 'Greece', correct: false},
             
         ]
+    },
+    {
+        question: 'What Country is this?',
+        image: 'Germany',
+        answers: [
+            {text: 'hrteshtrs', correct: true},
+            {text: 'htrshtrsht', correct: false},
+            {text: 'htrhtrdht', correct: false},
+            {text: 'htrdhtrdhrtd', correct: false},
+            
+        ]
+    },
+    {
+        question: 'What Country is this?',
+        image: 'Laos',
+        answers: [
+            {text: 'htrdhtrdhrtd', correct: true},
+            {text: 'j65jytdty jytdytd', correct: false},
+            {text: 'jyjtdyjtdftyj', correct: false},
+            {text: 'ytfjr6j', correct: false},
+            
+        ]
+    },
+    {
+        question: 'What Country is this?',
+        image: 'Finland',
+        answers: [
+            {text: 'jytdmy', correct: true},
+            {text: 'mytdmyt ytdfmytdfm', correct: false},
+            {text: 'mytfmytf', correct: false},
+            {text: 'ytfmytfmty', correct: false},
+            
+        ]
     }
 ]
 
