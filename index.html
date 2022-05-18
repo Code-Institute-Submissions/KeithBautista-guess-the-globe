@@ -18,25 +18,25 @@
 
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
-<body class="d-flex flex-column min-vh-100 min-vw-100"> <!--Max Height for Body and Pushes Footer Down--> <!--onload="usernameProvide()-->
+<body> <!--Max Height for Body and Pushes Footer Down--> <!--onload="usernameProvide()-->
 
     <!--Start Home Button Logo-->
     <a href="#"><h1 class="text-center" id="home" onclick="startGame()">Guess the Globe</h1></a>
     <!--End Home Button Logo-->
 
     <!--Nav Bar straight from Bootstrap Docs = https://getbootstrap.com/docs/4.0/components/navbar/-->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light"></div>
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
           <ul class="navbar-nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link btn-lg" href="#" onclick="return show('play','rules');">Play</a>
+              <a class="nav-link btn-lg btn" href="#" onclick="return show('play','rules');">Play</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link btn-lg" href="#" id="openRules">Rules</a>
+              <a class="nav-link btn-lg btn" href="#" id="openRules">Rules</a>
             </li>
           </ul>
         </div>
@@ -44,9 +44,9 @@
     <!--End of Nav Bar Section-->
 
     <!--Start of Play Section-->
-    <div class="container-fluid">
+    <div class="container-fluid play-section">
       <div class="row">
-        <div class="col-md-12"></div>
+        <div class="col-md-12 d-flex justify-content-center"></div>
           <div class="container"> <!--This container will include the main card for your questions-->
             <div id="question-container" class="hide"> <!--This is the question container which holds the questions as well as the buttons for answers-->
               <div id="question">This is a sample question</div>
@@ -60,7 +60,7 @@
             </div>
             <div class="controls"> <!--Provides Controls to be able to play game-->
               <button id="start-btn" class="start-btn btn">Start Button</button>
-              <button id="next-btn" class="next-btn btn hide">Next Question Button</button>
+              <button id="next-btn" class="next-btn btn hide">Next Question</button>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
     <!--End of Rules Modal Section-->
 
     <!--Start of Footer-->
-    <footer class="mt-auto">
+    <section id="section-footer" class="mt-auto footer">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 text-center">
@@ -101,7 +101,7 @@
             </div>
             <p class="text-center">Copyright © Guess the Globe</p>
         </div>
-    </footer>
+    </section>
     <!--End of Footer-->
 <!--Bootstrap JS, Popper, jQuery = https://getbootstrap.com/docs/4.4/getting-started/introduction/-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
