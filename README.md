@@ -406,3 +406,4 @@ You can clone the repository by following these steps:
 <a href="https://www.w3schools.com/html/default.asp">W3Schools</a> used for Text Formatting, Text-Decoration, Media Queries 
 
 Please be advised that this project is for educational use only and was created for the Code Institute Full Stack Module.
+[Back To **Table of Contents**](#table-of-contents)
