@@ -1,105 +1,105 @@
-const startButton = document.getElementById('start-btn')
-const nextButton = document.getElementById('next-btn')
-const questionContainerElement = document.getElementById('question-container')
-const questionElement = document.getElementById('question')
-const answerButtonsElement = document.getElementById('answer-buttons')
-const questionImageElement = document.getElementById('question-image')
+const startButton = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn');
+const questionContainerElement = document.getElementById('question-container');
+const questionElement = document.getElementById('question');
+const answerButtonsElement = document.getElementById('answer-buttons');
+const questionImageElement = document.getElementById('question-image');
 var progressBarValue = 10;
-let playerName = ""
+let playerName = "";
 let pointsReceived = 0;
 
-let shuffledQuestions, currentQuestionIndex 
+let shuffledQuestions, currentQuestionIndex;
 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click' , () => {
-    currentQuestionIndex++ // Adding 1 to the currentQuestionIndex
-    setNextQuestion() //Calling the setNextQuestion to get next question
-})
+    currentQuestionIndex++; // Adding 1 to the currentQuestionIndex
+    setNextQuestion(); //Calling the setNextQuestion to get next question
+});
 
 function startGame(){
-    console.log('The Game has Begun')
-    startButton.classList.add('hide')// Here we are hiding the startGame Button for the moment
-    shuffledQuestions = questions.sort(() => Math.random() - .5)//Less than or more than 0 which will shuffle our questions for us
-    currentQuestionIndex = 0
-    questionContainerElement.classList.remove('hide')//Question Container has hide class, we now remove it to show questions
-    setNextQuestion()// Here we set the next question for the user
-    document.getElementById('progressBar').style.width = (10 + '%')
+    console.log('The Game has Begun');
+    startButton.classList.add('hide');// Here we are hiding the startGame Button for the moment
+    shuffledQuestions = questions.sort(() => Math.random() -0.5);//Less than or more than 0 which will shuffle our questions for us
+    currentQuestionIndex = 0;
+    questionContainerElement.classList.remove('hide');//Question Container has hide class, we now remove it to show questions
+    setNextQuestion();// Here we set the next question for the user
+    document.getElementById('progressBar').style.width = (10 + '%');
     document.getElementById('welcomeRulesMessage').innerHTML = `
-    <h2>Hello ${playerName}, welcome to the rules page!</h2>`
+    <h2>Hello ${playerName}, welcome to the rules page!</h2>`;
     document.getElementById('firstName').innerHTML = `
-    <input type="text" class="form-control" id="inputFirstName" value="${playerName}" placeholder="${playerName}" name="First Name" required>`
+    <input type="text" class="form-control" id="inputFirstName" value="${playerName}" placeholder="${playerName}" name="First Name" required>`;
 }
 
 
 function setNextQuestion(){
-    resetState()
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
     
 }
 
 function increaseProgressBar (){
     progressBarValue += 10;
-    document.getElementById('progressBar').style.width = (progressBarValue + '%')
-    console.log(progressBarValue)
+    document.getElementById('progressBar').style.width = (progressBarValue + '%');
+    console.log(progressBarValue);
 }
 
 function showQuestion(question){
-    questionElement.innerHTML = question.question // Changes Question Text
-    questionImageElement.innerHTML = question.image // Changes Question Image
+    questionElement.innerHTML = question.question; // Changes Question Text
+    questionImageElement.innerHTML = question.image; // Changes Question Image
     question.answers.forEach(answer => {
-        const button = document.createElement('button')
-        button.innerHTML = answer.text // Changes Question Answer
-        button.classList.add('btn') // Change the classlist of button to btn
+        const button = document.createElement('button');
+        button.innerHTML = answer.text; // Changes Question Answer
+        button.classList.add('btn'); // Change the classlist of button to btn
         if (answer.correct) { 
-            button.dataset.correct = answer.correct // Only set to true
+            button.dataset.correct = answer.correct; // Only set to true
             pointsReceived += 10;
-            console.log("Points received is" + pointsReceived)
+            console.log("Points received is" + pointsReceived);
 
         }
-        button.addEventListener('click', selectAnswer)
-        answerButtonsElement.appendChild(button)
-    })
+        button.addEventListener('click', selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
 }
 
 function resetState(){
-    clearStatusClass(document.body) // To reset the color of background inbetween questions
-    nextButton.classList.add('hide') // Hiding the next button while within the questions
+    clearStatusClass(document.body); // To reset the color of background inbetween questions
+    nextButton.classList.add('hide'); // Hiding the next button while within the questions
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild
-        (answerButtonsElement.firstChild)
+        (answerButtonsElement.firstChild);
     }
 }
 
 function selectAnswer(e){
-    const selectedButton = e.target //Button pressed or selected
-    const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct) // Check if set to correct or wrong
+    const selectedButton = e.target; //Button pressed or selected
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.body, correct); // Check if set to correct or wrong
     Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
+        setStatusClass(button, button.dataset.correct);
+    });
     if (shuffledQuestions.length > currentQuestionIndex + 1) { 
         /*If the shuffled questions amount is greater than current question amount then show next button 
         else change text to restart and remove the hide button*/
-        nextButton.classList.remove('hide') //We are removing the classlist hide to show nextButton
+        nextButton.classList.remove('hide'); //We are removing the classlist hide to show nextButton
     } else {
-        startButton.innerHTML = 'Restart'
-        startButton.classList.remove('hide')
+        startButton.innerHTML = 'Restart';
+        startButton.classList.remove('hide');
     }
 }
 
 function setStatusClass(element, correct){
-    clearStatusClass(element)
+    clearStatusClass(element);
     /*If correct we want to add correct class else add wrong class*/
     if (correct) {
-        element.classList.add('correct')
+        element.classList.add('correct');
     } else {
-        element.classList.add('wrong')
+        element.classList.add('wrong');
     }
 }
 
  function clearStatusClass(element) {
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 }
 
 const questions = [
@@ -213,7 +213,7 @@ const questions = [
             
         ]
     }
-]
+];
 
 
 
@@ -240,37 +240,37 @@ var closeRulesModal = document.getElementsByClassName('closeRulesModal')[0];
 //When the user clicks on the button, open the Rules Modal
 rulesModalBtn.onclick = function(){
     rulesModal.style.display = "block";
-}
+};
 
 //When the user clicks on <span> (x), then close the rulesModal
 closeRulesModal.onclick = function() {
     rulesModal.style.display = "none";
-}
+};
 
 //When the user clicks anywhere outside the rulesModal, then close it
 window.onclick = function(event) {
     if (event.target == rulesModal) {
     rulesModal.style.display = "none";
     }
-}
+};
 
 function captureName(){
     //get the start username button
     var startUsernameButton = document.getElementById('start-username-button');
     startUsernameButton.addEventListener('click', captureUsername);
     function captureUsername(e) {
-        e.preventDefault()
+        e.preventDefault();
         let username = document.getElementById('name');
         if (username.value == ('')) {
         playerName = 'Player 1';
-        console.log(playerName)
+        console.log(playerName);
         usernameModal.style.display = "none";
-        startGame()
+        startGame();
         } else {
             playerName = username.value;
-            console.log(playerName)
+            console.log(playerName);
             usernameModal.style.display = "none";
-            startGame()
+            startGame();
         }
     }
 }
@@ -286,7 +286,7 @@ var closeUsernameModal = document.getElementsByClassName('closeUsernameModal')[0
 //When the user clicks on the button, open the username Modal
 onload = function(){
     usernameModal.style.display = "block";
-}
+};
 
 /*Start of contact form Modal*/
 
@@ -302,18 +302,17 @@ var closeContactModal = document.getElementsByClassName('closeContactModal')[0];
 //When the user clicks on the button, open the Rules Modal
 contactModalBtn.onclick = function(){
     contactForm.style.display = "block";
-}
+};
 
 //When the user clicks on <span> (x), then close the rulesModal
 closeContactModal.onclick = function() {
     contactForm.style.display = "none";
-}
+};
 
 //When the user clicks anywhere outside the rulesModal, then close it
 window.onclick = function(event) {
     if (event.target == contactForm) {
         contactForm.style.display = "none";
     }
-}
-
+};
 
