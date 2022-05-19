@@ -37,8 +37,8 @@
     2. [Images](#Images)
     3. [Contact Us](#contact-us)
     4. [Footer](#footer)
-    5. [Progress-Bar]
-    5. [404 Error](#404-error-page)
+    5. [Progress-Bar](#progress-bar)
+    6. [404 Error](#404-error-page)
 
 
 
@@ -179,7 +179,63 @@ This website consists of 2 pages. (index.html and 404.html)
 - The Contact Us page is hidden and only shown when the icon under "contact developer". A modal was used in creating the form. If the x on the top right or if the cursor is clicked outside the card then the contact form will again disappear.
     ![Contact Form](docs/features-contact-form.png)
 
+### Progress-Bar
+
+- The progress bar allows users to know where they are in terms of progress and finishing the quiz.
+![progress-bar](docs/progress-bar.png)
+
 ### Footer
 
 - The footer consists of 3 sections, the explore project section, contact developer section and also the copyright section at the bottom of the page.
 ![Footer](docs/features-footer-contact-handles.png)
+
+## Validation
+
+### HTML Validation
+
+The <a href="https://validator.w3.org/" target="_blank">W3C Markup Validation Service</a> was used to validate the HTML of the site. Shown below are screenshots of the validation. Note that all pages pass with no errors as well as no warnings to show.
+
+<details>
+<summary>Index.html</summary>
+<img src="docs/html-validation-index.png">
+</details>
+<details>
+<summary>404.html</summary>
+<img src="docs/html-validation-404.png">
+</details>
+
+### CSS Validation
+
+The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validation Service</a> was used to validate the CSS of the site. Shown below are screenshots of the validation. Please note that during validation, the CSS pases with no errors found.
+
+<details>
+<summary>Style.CSS External Style Sheet</summary>
+<img src="docs/css-validation.png">
+</details>
+
+## Accessibility
+
+The WAVE WebAIM Accessibility Tool was used to validate and evaluate the accessibility of each page of the site. Please find the screenshots of these below.
+
+<details>
+<summary>Index.html</summary>
+<img src="docs/wave-accessibility-index.png">
+</details>
+<details>
+<summary>404.html</summary>
+<img src="docs/wave-accessibility-404.png">
+</details>
+
+## JSHint
+
+JSHint was used to validate and evaluate the JavaScript of the site Please find the screenshots of these below.
+
+<details>
+<summary>Functions</summary>
+<img src="docs/jshint-functions.png">
+</details>
+The JSHint test initially provided plenty of warnings regarding missing semi colons which have now been fixed. There are currently errors with the following text "'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)." Though by adding in 
+{
+  "esversion": 6
+}
+the errors will disappear.
