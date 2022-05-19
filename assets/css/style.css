@@ -112,6 +112,7 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  font-size: large;
 }
 
 /* The Close Button */
@@ -183,23 +184,9 @@ img {
   font-size: 2rem;
 }
 
-.circle {
-  width: 75px;
-  height: 125px;
-  background: #013220;
-  margin: 10% auto;
-  border-radius: 50%;
-  text-align: center;
-  color: white;
-}
-
 .content {
   vertical-align: middle;
 }
 
-#usernameContentModal {
-  width: 25%;
-  align-items: center;
-  font-size: 2rem;
-}
+
 

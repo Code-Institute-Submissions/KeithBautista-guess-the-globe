@@ -25,7 +25,7 @@ function startGame(){
     setNextQuestion()// Here we set the next question for the user
     document.getElementById('progressBar').style.width = (10 + '%')
     document.getElementById('welcomeRulesMessage').innerHTML = `
-    <h1>Hello ${playerName}, welcome to the rules page!</h1>`
+    <h2>Hello ${playerName}, welcome to the rules page!</h2>`
 }
 
 
