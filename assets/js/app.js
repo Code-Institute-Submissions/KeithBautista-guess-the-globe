@@ -197,17 +197,6 @@ onload = function(){
     usernameModal.style.display = "block";
 }
 
-//When the user clicks on <span> (x), then close the username Modal
-closeUsernameModal.onclick = function() {
-    usernameModal.style.display = "none";
-}
-
-//When the user clicks anywhere outside the usernameModal, then close it
-window.onclick = function(event) {
-    if (event.target == usernameModal) {
-    usernameModal.style.display = "none";
-    }
-}
 
 function captureName() {
     //get the start username button
@@ -219,10 +208,12 @@ function captureName() {
         if (username.value == ('')) {
         playerName = 'Player 1';
         console.log(playerName)
+        usernameModal.style.display = "none";
         startGame()
         } else {
             playerName = username.value;
             console.log(playerName)
+            usernameModal.style.display = "none";
             startGame()
         }
     }
