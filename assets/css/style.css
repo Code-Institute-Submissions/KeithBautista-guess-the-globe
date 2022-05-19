@@ -33,7 +33,7 @@ body {
   background-color: #003f64;
 
 }
-
+/*Styling Games Container*/
 .container {
   background-color: white;
   border-radius: 5px;
@@ -44,7 +44,7 @@ body {
 
 }
 
-
+/*Start and Next Button Styling*/
 .start.btn, .next.btn {
   font-weight: bold;
   padding: 10px 20px;
@@ -133,7 +133,7 @@ body {
   cursor: pointer;
 }
 
-/*Header Styling*/
+/*Modal Header, Body, Footer Styling*/
 .modal-header {
   padding: 4px 16px;
   background-color: #003f64;
@@ -175,16 +175,16 @@ img {
   height: 200px;
   align-items: center;
   background-color: #013220 !important;
-  font-size: 2rem;
+  font-size: 2rem; /*This is the start button at the beginning*/
 }
 
 .navbuttons {
   margin: 10px;
-  font-size: 2rem;
+  font-size: 2rem; /*These are the nav buttons for Rules and Play*/
 }
 
 #question {
-  font-size: 2rem;
+  font-size: 2rem; /*Question Font Size Increase*/
 }
 
 .content {
