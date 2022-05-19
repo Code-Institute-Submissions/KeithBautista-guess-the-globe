@@ -30,6 +30,8 @@ body {
   height: 100%;
   --hue: var(--hue-neutral); /*Set at neutral as question is neither wrong or correct yet*/
    /*If you want to only have the buttons turn color, remove this and change the background*/
+  background-color: #003f64;
+
 }
 
 .container {

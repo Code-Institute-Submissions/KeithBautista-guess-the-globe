@@ -21,7 +21,7 @@
 <body onload="openNameInput()"> <!--Max Height for Body and Pushes Footer Down--> <!--onload="usernameProvide()-->
 
     <!--Start Home Button Logo-->
-    <a href="#"><h1 class="text-center" id="home" onClick="window.location.reload();">Guess the Globe</h1></a>
+    <a href="#" aria-label="Home Button"><h1 class="text-center" id="home" onClick="window.location.reload();">Guess the Globe</h1></a>
     <!--End Home Button Logo-->
 
     <!--Start of Name Container-->
@@ -52,10 +52,10 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link btn-lg btn navbuttons" href="#" onclick="return show('play','rules');">Play</a>
+              <a class="nav-link btn-lg btn navbuttons" href="#" onclick="return show('play','rules');" aria-label="Play Button">Play</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link btn-lg btn navbuttons" href="#" id="openRules">Rules</a>
+              <a class="nav-link btn-lg btn navbuttons" href="#" id="openRules" aria-label="Rules Button">Rules</a>
             </li>
           </ul>
         </div>
@@ -127,11 +127,11 @@
             <div class="row">
                 <div class="col-md-6 text-center">
                     <p><u>Explore Project</u></p>
-                    <a href="https://github.com/KeithBautista/guess-the-globe"><i class="fa-brands fa-github-square fa-2xl"></i></a>
+                    <a href="https://github.com/KeithBautista/guess-the-globe" aria-label="Github Icon"><i class="fa-brands fa-github-square fa-2xl"></i></a>
                 </div>
                 <div class="col-md-6 text-center">
                     <p><u>Contact Developer</u></p>
-                    <a href="https://getbootstrap.com/docs/4.0/content/typography/"><i class="fa-solid fa-address-book fa-2xl"></i></a>
+                    <a href="https://github.com/KeithBautista" aria-label="Address Book Icon"><i class="fa-solid fa-address-book fa-2xl"></i></a>
                 </div>
             </div>
             <p class="text-center">Copyright © Guess the Globe</p>
