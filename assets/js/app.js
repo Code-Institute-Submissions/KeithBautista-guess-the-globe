@@ -5,6 +5,7 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const questionImageElement = document.getElementById('question-image')
 var progressBarValue = 0;
+let playerName = ""
 
 
 let shuffledQuestions, currentQuestionIndex 
@@ -208,6 +209,24 @@ window.onclick = function(event) {
     }
 }
 
+function captureName() {
+    //get the start username button
+    let startUsernameButton = document.getElementById('start-username-button');
+    startUsernameButton.addEventListener('click', captureUsername);
+    function captureUsername(e) {
+        e.preventDefault()
+        let username = document.getElementById('name');
+        if (username.value == ('')) {
+        playerName = 'Player 1';
+        console.log(playerName)
+        startGame()
+        } else {
+            playerName = username.value;
+            console.log(playerName)
+            startGame()
+        }
+    }
+}
 /*End of username Modal*/
 
 /* This is where you place in your name at the very beginning
