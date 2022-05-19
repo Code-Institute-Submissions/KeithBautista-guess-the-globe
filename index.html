@@ -18,179 +18,195 @@
 <!--Favicon-->
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
-<body onload="openNameInput()"> <!--Max Height for Body and Pushes Footer Down--> <!--onload="usernameProvide()-->
 
-    <!--Start Home Button Logo-->
-    <noscript class="no-js">
-      <p>This game requires JavaScript in order to work. Your browser either does not support JavaScript or you have it disabled. Try enabling JavaScript in your settings to play the game.
-      </p>
-    </noscript>
-    <h1 class="text-center" id="home" onClick="window.location.reload();">Guess the Globe</h1>
-    <!--End Home Button Logo-->
+<body onload="openNameInput()"> <!--Onload Call function openNameInput()-->
 
-    <!--Start of Name Container-->
-    <div class="modal" tabindex="-1" role="dialog" id="openUsernameModal">
-      <div class=".modal-dialog-centered" role="document">
-        <div class="modal-content" id="usernameContentModal">
-          <div class="modal-header">
-            <h5 class="modal-title">Please enter player name:</h5>
-          </div>
-          <form action="#">  
-            <div class="form usernameContentModal">
-              <label for="name">Enter name:</label>
-              <input type="text" id="name" name="name" pattern="[A-Za-z0-9]{1,15}" maxlength="15">
-            </div>
-            <button class="main-menu-button" id="start-username-button" onclick="captureName()">Start</button>
-          </form>
-        </div>
+<!--Start Home Button Logo-->
+
+<noscript class="no-js">
+  <p>This game requires JavaScript in order to work. Your browser either does not support JavaScript or you have it disabled. Try enabling JavaScript in your settings to play the game.
+  </p>
+</noscript>
+<h1 class="text-center" id="home" onClick="window.location.reload();">Guess the Globe</h1>
+
+<!--End Home Button Logo-->
+
+<!--Start of Name Container-->
+
+<div class="modal" tabindex="-1" role="dialog" id="openUsernameModal">
+  <div class=".modal-dialog-centered" role="document">
+    <div class="modal-content" id="usernameContentModal">
+      <div class="modal-header">
+        <h5 class="modal-title">Please enter player name:</h5>
       </div>
-    </div>
-    <!--End of Name Container-->
-
-    <!--Start of Contact Container-->
-    <div class="modal" tabindex="-1" role="dialog" id="openContactForm">
-      <div class=".modal-dialog-centered" role="document">
-        <div class="modal-content" id="closeContactModal">
-          <div class="modal-header">
-            <h5 class="modal-title">Contact Developer</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true" class="closeContactModal">&times;</span>
-            </button>
-          </div>
-          <h3 class="text-center h3underline"><strong>Leave Feedback!</strong></h3>
-          <form action="https://formdump.codeinstitute.net" method="POST">
-              <div class="form-group">
-                  <label for="inputFullName" class="form-label">First Name</label>
-                  <div id="firstName">
-                  <input type="text" class="form-control" id="inputFullName" placeholder="First Name" name="First Name" required>
-                  </div>
-              </div>
-
-              <div class="form-group">
-                <label for="inputSurname" class="form-label">Surname</label>
-                <input type="text" class="form-control" id="inputSurname" placeholder="Surname" name="Surname" required>
-              </div>
-
-              <div class="form-group">
-                  <label for="inputEmailAddress" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="inputEmailAddress" placeholder="Email Address" name="Email Address" required>
-              </div>
-
-              <div class="form-group">
-                  <label for="inputPhoneNumber" class="form-label">Phone Number</label>
-                  <input type="number" class="form-control" id="inputPhoneNumber" placeholder="Phone Number" name="Phone Number" required>
-              </div>
-
-              <div class="form-group">
-                  <label for="inputQuery" class="form-label">Message Us</label>
-                  <textarea class="form-control" id="inputQuery" rows="4" name="Query" placeholder="Please let us know what I can help you with!" required></textarea>
-              </div>
-
-              <div class="form-group">
-                  <button type="submit" class="btn btn-dark p-2">Submit</button>
-              </div>
-          </form>
+      <form action="#">  
+        <div class="form usernameContentModal">
+          <label for="name">Enter name:</label>
+          <input type="text" id="name" name="name" pattern="[A-Za-z0-9]{1,15}" maxlength="15">
         </div>
-      </div>
+        <button class="main-menu-button" id="start-username-button" onclick="captureName()">Start</button>
+      </form>
     </div>
-    
-    <!--End of Contact Container-->
+  </div>
+</div>
 
-    <!--Nav Bar straight from Bootstrap Docs = https://getbootstrap.com/docs/4.0/components/navbar/-->
-    <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="#" aria-label="navbar"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<!--End of Name Container-->
+
+<!--Start of Contact Container-->
+
+<div class="modal" tabindex="-1" role="dialog" id="openContactForm">
+  <div class=".modal-dialog-centered" role="document">
+    <div class="modal-content" id="closeContactModal">
+      <div class="modal-header">
+        <h5 class="modal-title">Contact Developer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="closeContactModal">&times;</span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link btn-lg btn navbuttons" href="#" onclick="return show('play','rules');" aria-label="Play Button">Play</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn-lg btn navbuttons" href="#" id="openRules" aria-label="Rules Button">Rules</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    <!--End of Nav Bar Section-->
+      </div>
+      <h3 class="text-center h3underline"><strong>Leave Feedback!</strong></h3>
+      <form action="https://formdump.codeinstitute.net" method="POST">
+          <div class="form-group">
+              <label for="inputFullName" class="form-label">First Name</label>
+              <div id="firstName">
+              <input type="text" class="form-control" id="inputFullName" placeholder="First Name" name="First Name" required>
+              </div>
+          </div>
 
-    <!--Start of Play Section-->
-    <div class="container-fluid play-section">
-      <div id="backGroundImage" style="background-image: url('assets/images/backgroundGlobe.jpg');">
+          <div class="form-group">
+            <label for="inputSurname" class="form-label">Surname</label>
+            <input type="text" class="form-control" id="inputSurname" placeholder="Surname" name="Surname" required>
+          </div>
+
+          <div class="form-group">
+              <label for="inputEmailAddress" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="inputEmailAddress" placeholder="Email Address" name="Email Address" required>
+          </div>
+
+          <div class="form-group">
+              <label for="inputPhoneNumber" class="form-label">Phone Number</label>
+              <input type="number" class="form-control" id="inputPhoneNumber" placeholder="Phone Number" name="Phone Number" required>
+          </div>
+
+          <div class="form-group">
+              <label for="inputQuery" class="form-label">Message Us</label>
+              <textarea class="form-control" id="inputQuery" rows="4" name="Query" placeholder="Please let us know what I can help you with!" required></textarea>
+          </div>
+
+          <div class="form-group">
+              <button type="submit" class="btn btn-dark p-2">Submit</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--End of Contact Container-->
+
+<!--Nav Bar straight from Bootstrap Docs = https://getbootstrap.com/docs/4.0/components/navbar/-->
+
+<nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand" href="#" aria-label="navbar"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link btn-lg btn navbuttons" href="#" onclick="return show('play','rules');" aria-label="Play Button">Play</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-lg btn navbuttons" href="#" id="openRules" aria-label="Rules Button">Rules</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!--End of Nav Bar Section-->
+
+<!--Start of Play Section-->
+
+<div class="container-fluid play-section">
+  <div id="backGroundImage" style="background-image: url('assets/images/backgroundGlobe.jpg');">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center">
+        <div class="container"> <!--This container will include the main card for your questions-->
+          <div id="question-container" class="hide"> <!--This is the question container which holds the questions as well as the buttons for answers-->
+            <div id="question">This is a sample question</div>
+            <div class="question-image" id="question-image">Question Image</div>
+            <div id="answer-buttons" class="btn-grid"> <!--Grid for Answers to style with CSS-->
+              <button class="btn">Answer 1</button>
+              <button class="btn">Answer 2</button>
+              <button class="btn">Answer 3</button>
+              <button class="btn">Answer 4</button>
+            </div>
+          </div>
+          <div class="controls d-flex justify-content-center"> <!--Provides Controls to be able to play game-->
+            <button id="start-btn" class="start-btn btn" onclick="openNameInput()">Press to Begin</button>
+          </div>
+          <div>
+            <button id="next-btn" class="next-btn btn hide on" onClick="increaseProgressBar();">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--End of Play Section-->
+
+<!--Start of Progress Bar-->
+
+<div class="progress">
+  <div class="progress-bar bg-success" id='progressBar' role="progressbar" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<!--End of Progress Bar-->
+
+<!--Start of Rules Modal Section-->
+
+<div class="modal" tabindex="-1" role="dialog" id="openRulesModal">
+  <div class=".modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Rules of the game</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="closeRulesModal">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2 id="welcomeRulesMessage">Welcome Message</h2>
+        <h3>Introduction</h3>
+        <p>Welcome to Guess the Globe! Which is a Quiz Game based on Flags!</p>
+        <br>
+        <h3>How to Play?</h3>
+        <p>If you were able to select the rules page this means that you have placed in a username already :) Once you have done this the questions will immediately show on your screen in a random order.</p>
+        <p>Under this, there are 4 options as answers which you can click on and choose. If you get the question correct, the background of the answer will turn green. The rest of the questions (incorrect) will turn red.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--End of Rules Modal Section-->
+
+<!--Start of Footer-->
+
+<section id="section-footer" class="mt-auto footer">
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 d-flex justify-content-center">
-            <div class="container"> <!--This container will include the main card for your questions-->
-              <div id="question-container" class="hide"> <!--This is the question container which holds the questions as well as the buttons for answers-->
-                <div id="question">This is a sample question</div>
-                <div class="question-image" id="question-image">Question Image</div>
-                <div id="answer-buttons" class="btn-grid"> <!--Grid for Answers to style with CSS-->
-                  <button class="btn">Answer 1</button>
-                  <button class="btn">Answer 2</button>
-                  <button class="btn">Answer 3</button>
-                  <button class="btn">Answer 4</button>
-                </div>
-              </div>
-              <div class="controls d-flex justify-content-center"> <!--Provides Controls to be able to play game-->
-                <button id="start-btn" class="start-btn btn" onclick="openNameInput()">Press to Begin</button>
-              </div>
-              <div>
-                <button id="next-btn" class="next-btn btn hide on" onClick="increaseProgressBar();">Next Question</button>
-              </div>
+            <div class="col-md-6 text-center">
+                <h3><u>Explore Project</u></h3>
+                <a href="https://github.com/KeithBautista/guess-the-globe" aria-label="Github Icon"><i class="fa-brands fa-github-square fa-2xl"></i></a>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--End of Play Section-->
-
-    <!--Start of Progress Bar-->
-    <div class="progress">
-      <div class="progress-bar bg-success" id='progressBar' role="progressbar" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <!--End of Progress Bar-->
-
-    <!--Start of Rules Modal Section-->
-    <div class="modal" tabindex="-1" role="dialog" id="openRulesModal">
-      <div class=".modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Rules of the game</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true" class="closeRulesModal">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <h2 id="welcomeRulesMessage">Welcome Message</h2>
-            <h3>Introduction</h3>
-            <p>Welcome to Guess the Globe! Which is a Quiz Game based on Flags!</p>
-            <br>
-            <h3>How to Play?</h3>
-            <p>If you were able to select the rules page this means that you have placed in a username already :) Once you have done this the questions will immediately show on your screen in a random order.</p>
-            <p>Under this, there are 4 options as answers which you can click on and choose. If you get the question correct, the background of the answer will turn green. The rest of the questions (incorrect) will turn red.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--End of Rules Modal Section-->
-
-    <!--Start of Footer-->
-    <section id="section-footer" class="mt-auto footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <h3><u>Explore Project</u></h3>
-                    <a href="https://github.com/KeithBautista/guess-the-globe" aria-label="Github Icon"><i class="fa-brands fa-github-square fa-2xl"></i></a>
-                </div>
-                <div class="col-md-6 text-center">
-                    <h3><u>Contact Developer</u></h3>
-                    <a href="#" aria-label="Address Book Icon" id="contactModalBtn"><i class="fa-solid fa-address-book fa-2xl"></i></a>
-                </div>
+            <div class="col-md-6 text-center">
+                <h3><u>Contact Developer</u></h3>
+                <a href="#" aria-label="Address Book Icon" id="contactModalBtn"><i class="fa-solid fa-address-book fa-2xl"></i></a>
             </div>
-            <p class="text-center">Copyright © Guess the Globe</p>
         </div>
-    </section>
-    <!--End of Footer-->
+        <p class="text-center">Copyright © Guess the Globe</p>
+    </div>
+</section>
+
+<!--End of Footer-->
 <!--Bootstrap JS, Popper, jQuery = https://getbootstrap.com/docs/4.4/getting-started/introduction/-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

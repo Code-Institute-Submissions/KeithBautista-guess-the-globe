@@ -101,7 +101,7 @@ function setStatusClass(element, correct){
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
-
+//Questions Array with Images and Answers
 const questions = [
     {
         question: 'What Country is this?',
@@ -215,10 +215,6 @@ const questions = [
     }
 ];
 
-
-
-
-
 /*Start of Show and Hide Sections found in StackOverFlow = https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file*/
 function show(shown, hidden) {
   document.getElementById(shown).style.display='block';
@@ -254,6 +250,7 @@ window.onclick = function(event) {
     }
 };
 
+//Function to capture the username onload, if not then playerName = "Player 1"
 function captureName(){
     //get the start username button
     var startUsernameButton = document.getElementById('start-username-button');
@@ -288,6 +285,9 @@ onload = function(){
     usernameModal.style.display = "block";
 };
 
+/*End of username Modal*/
+
+
 /*Start of contact form Modal*/
 
 //Grab the Modal
@@ -315,4 +315,7 @@ window.onclick = function(event) {
         contactForm.style.display = "none";
     }
 };
+
+/*End of contact form Modal*/
+
 
