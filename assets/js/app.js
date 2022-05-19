@@ -6,6 +6,7 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 const questionImageElement = document.getElementById('question-image')
 var progressBarValue = 10;
 let playerName = ""
+let pointsReceived = 0;
 
 
 let shuffledQuestions, currentQuestionIndex 
@@ -49,6 +50,9 @@ function showQuestion(question){
         button.classList.add('btn') // Change the classlist of button to btn
         if (answer.correct) { 
             button.dataset.correct = answer.correct // Only set to true
+            pointsReceived += 10;
+            console.log("Points received is" + pointsReceived)
+
         }
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
@@ -101,10 +105,10 @@ const questions = [
         question: 'What Country is this?',
         image: "<img src='assets/images/bangladesh.webp'>",
         answers: [
-            {text: 'Ireland', correct: true},
-            {text: 'Ivory Coast', correct: false},
-            {text: 'Finland', correct: false},
-            {text: 'Greece', correct: false},
+            {text: 'Japan', correct: false},
+            {text: 'Bangladesh', correct: true},
+            {text: 'Brazil', correct: false},
+            {text: 'Antarctica', correct: false},
             
         ]
     },
@@ -112,10 +116,10 @@ const questions = [
         question: 'What Country is this?',
         image: "<img src='assets/images/indonesia.webp'>",
         answers: [
-            {text: 'hrteshtrs', correct: true},
-            {text: 'htrshtrsht', correct: false},
-            {text: 'htrhtrdht', correct: false},
-            {text: 'htrdhtrdhrtd', correct: false},
+            {text: 'Vietnam', correct: false},
+            {text: 'China', correct: false},
+            {text: 'Indonesia', correct: true},
+            {text: 'Monaco', correct: false},
             
         ]
     },
@@ -123,10 +127,10 @@ const questions = [
         question: 'What Country is this?',
         image: "<img src='assets/images/kazakhstan.webp'>",
         answers: [
-            {text: 'htrdhtrdhrtd', correct: true},
-            {text: 'j65jytdty jytdytd', correct: false},
-            {text: 'jyjtdyjtdftyj', correct: false},
-            {text: 'ytfjr6j', correct: false},
+            {text: 'Iraq', correct: false},
+            {text: 'Kazakhstan', correct: true},
+            {text: 'UAE', correct: false},
+            {text: 'Egypt', correct: false},
             
         ]
     },
@@ -134,10 +138,10 @@ const questions = [
         question: 'What Country is this?',
         image: "<img src='assets/images/laos.webp'>",
         answers: [
-            {text: 'jytdmy', correct: true},
-            {text: 'mytdmyt ytdfmytdfm', correct: false},
-            {text: 'mytfmytf', correct: false},
-            {text: 'ytfmytfmty', correct: false},
+            {text: 'Laos', correct: true},
+            {text: 'Japan', correct: false},
+            {text: 'Bangladesh', correct: false},
+            {text: 'Palau', correct: false},
             
         ]
     },
@@ -145,10 +149,10 @@ const questions = [
         question: 'What Country is this?',
         image: "<img src='assets/images/lebanon.webp'>",
         answers: [
-            {text: 'jytdmy', correct: true},
-            {text: 'mytdmyt ytdfmytdfm', correct: false},
-            {text: 'mytfmytf', correct: false},
-            {text: 'ytfmytfmty', correct: false},
+            {text: 'Ammam', correct: false},
+            {text: 'Jerusalem', correct: false},
+            {text: 'Nicosia', correct: false},
+            {text: 'Lebanon', correct: true},
             
         ]
     },
@@ -156,10 +160,10 @@ const questions = [
         question: 'What Country is this?',
         image: "<img src='assets/images/nepal.webp'>",
         answers: [
-            {text: 'jytdmy', correct: true},
-            {text: 'mytdmyt ytdfmytdfm', correct: false},
-            {text: 'mytfmytf', correct: false},
-            {text: 'ytfmytfmty', correct: false},
+            {text: 'China', correct: false},
+            {text: 'Nepal', correct: true},
+            {text: 'Ethiopia', correct: false},
+            {text: 'Uraguay', correct: false},
             
         ]
     },
@@ -167,10 +171,10 @@ const questions = [
         question: 'What Country is this?',
         image: "<img src='assets/images/netherlands.webp'>",
         answers: [
-            {text: 'jytdmy', correct: true},
-            {text: 'mytdmyt ytdfmytdfm', correct: false},
-            {text: 'mytfmytf', correct: false},
-            {text: 'ytfmytfmty', correct: false},
+            {text: 'Luxemburg', correct: false},
+            {text: 'Russia', correct: false},
+            {text: 'Netherlands', correct: true},
+            {text: 'Thailand', correct: false},
             
         ]
     },
@@ -178,10 +182,10 @@ const questions = [
         question: 'What Country is this?',
         image: "<img src='assets/images/philippines.webp'>",
         answers: [
-            {text: 'jytdmy', correct: true},
-            {text: 'mytdmyt ytdfmytdfm', correct: false},
-            {text: 'mytfmytf', correct: false},
-            {text: 'ytfmytfmty', correct: false},
+            {text: 'Japan', correct: false},
+            {text: 'Palau', correct: false},
+            {text: 'Malaysia', correct: false},
+            {text: 'Philippines', correct: true},
             
         ]
     },
@@ -189,10 +193,10 @@ const questions = [
         question: 'What Country is this?',
         image: "<img src='assets/images/romania.webp'>",
         answers: [
-            {text: 'jytdmy', correct: true},
-            {text: 'mytdmyt ytdfmytdfm', correct: false},
-            {text: 'mytfmytf', correct: false},
-            {text: 'ytfmytfmty', correct: false},
+            {text: 'Chad', correct: false},
+            {text: 'Monaco', correct: false},
+            {text: 'Luxemburg', correct: false},
+            {text: 'Romania', correct: true},
             
         ]
     },
@@ -200,10 +204,10 @@ const questions = [
         question: 'What Country is this?',
         image: "<img src='assets/images/thailand.webp'>",
         answers: [
-            {text: 'jytdmy', correct: true},
-            {text: 'mytdmyt ytdfmytdfm', correct: false},
-            {text: 'mytfmytf', correct: false},
-            {text: 'ytfmytfmty', correct: false},
+            {text: 'Malaysia', correct: false},
+            {text: 'Thailand', correct: true},
+            {text: 'Vietnam', correct: false},
+            {text: 'Netherlands', correct: false},
             
         ]
     }
