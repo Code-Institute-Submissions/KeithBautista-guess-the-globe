@@ -26,6 +26,8 @@ function startGame(){
     document.getElementById('progressBar').style.width = (10 + '%')
     document.getElementById('welcomeRulesMessage').innerHTML = `
     <h2>Hello ${playerName}, welcome to the rules page!</h2>`
+    document.getElementById('ogrenwo').innerHTML = `
+    <input type="text" class="form-control" id="inputFullName" value="${playerName}" placeholder="${playerName}" name="Full Name" required>`
 }
 
 
@@ -252,23 +254,7 @@ window.onclick = function(event) {
     }
 }
 
-/*End of Rules Modal*/
-
-/*Start of username Modal*/
-
-//Grab the Modal
-var usernameModal = document.getElementById('openUsernameModal');
-
-//Get the <span> element that closes the modal
-var closeUsernameModal = document.getElementsByClassName('closeUsernameModal')[0];
-
-//When the user clicks on the button, open the username Modal
-onload = function(){
-    usernameModal.style.display = "block";
-}
-
-
-function captureName() {
+function captureName(){
     //get the start username button
     var startUsernameButton = document.getElementById('start-username-button');
     startUsernameButton.addEventListener('click', captureUsername);
@@ -288,4 +274,46 @@ function captureName() {
         }
     }
 }
+
+/*Start of username Modal*/
+
+//Grab the Modal
+var usernameModal = document.getElementById('openUsernameModal');
+
+//Get the <span> element that closes the modal
+var closeUsernameModal = document.getElementsByClassName('closeUsernameModal')[0];
+
+//When the user clicks on the button, open the username Modal
+onload = function(){
+    usernameModal.style.display = "block";
+}
+
+/*Start of contact form Modal*/
+
+//Grab the Modal
+var contactForm = document.getElementById('openContactForm');
+
+//Grab the button that opens the modal - This is in the navBar
+var contactModalBtn = document.getElementById('contactModalBtn');
+
+//Get the <span> element that closes the modal
+var closeContactModal = document.getElementsByClassName('closeContactModal')[0];
+
+//When the user clicks on the button, open the Rules Modal
+contactModalBtn.onclick = function(){
+    contactForm.style.display = "block";
+}
+
+//When the user clicks on <span> (x), then close the rulesModal
+closeContactModal.onclick = function() {
+    contactForm.style.display = "none";
+}
+
+//When the user clicks anywhere outside the rulesModal, then close it
+window.onclick = function(event) {
+    if (event.target == contactForm) {
+        contactForm.style.display = "none";
+    }
+}
+
 

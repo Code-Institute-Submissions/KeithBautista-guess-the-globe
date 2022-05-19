@@ -47,6 +47,48 @@
     </div>
     <!--End of Name Container-->
 
+    <!--Start of Contact Container-->
+    <div class="modal" tabindex="-1" role="dialog" id="openContactForm">
+      <div class=".modal-dialog-centered" role="document">
+        <div class="modal-content" id="closeContactModal">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="closeContactModal">&times;</span>
+          </button>
+          <form action="#">  
+            <h3 class="text-center h3underline"><strong>Book a Table</strong></h3>
+              <form action="https://formdump.codeinstitute.net" method="POST">
+                  <div class="form-group">
+                      <label for="inputFullName" class="form-label">First Name</label>
+                      <div id="ogrenwo">
+                      <input type="text" class="form-control" id="inputFullName" placeholder="Full Name" name="Full Name" required>
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="inputEmailAddress" class="form-label">Email Address</label>
+                      <input type="email" class="form-control" id="inputEmailAddress" placeholder="Email Address" name="Email Address" required>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="inputPhoneNumber" class="form-label">Phone Number</label>
+                      <input type="number" class="form-control" id="inputPhoneNumber" placeholder="Phone Number" name="Phone Number" required>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="inputQuery" class="form-label">Message Us</label>
+                      <textarea class="form-control" id="inputQuery" rows="4" name="Customer Query" placeholder="Please let us know what we can help you with!" required></textarea>
+                  </div>
+
+                  <div class="form-group">
+                      <button type="submit" class="btn btn-dark p-2">Submit</button>
+                  </div>
+              </form>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--End of Contact Container-->
+
     <!--Nav Bar straight from Bootstrap Docs = https://getbootstrap.com/docs/4.0/components/navbar/-->
     <nav class="navbar navbar-expand-md navbar-light"></div>
         <a class="navbar-brand" href="#" aria-label="navbar"></a>
@@ -135,7 +177,7 @@
                 </div>
                 <div class="col-md-6 text-center">
                     <p><u>Contact Developer</u></p>
-                    <a href="https://github.com/KeithBautista" aria-label="Address Book Icon"><i class="fa-solid fa-address-book fa-2xl"></i></a>
+                    <a href="#" aria-label="Address Book Icon" id="contactModalBtn"><i class="fa-solid fa-address-book fa-2xl"></i></a>
                 </div>
             </div>
             <p class="text-center">Copyright © Guess the Globe</p>
@@ -150,19 +192,3 @@
 </body>
 </html>
 
-<!--Start of Rules Modal Section
-<div id="openRulesModal" class="modal" style="display:none">
-  <div id="rules" class="modal-content">
-    <div class="modal-header">
-      <span class="closeRulesModal">&times;</span>
-      <h2>Modal Header</h2>
-    </div>
-    <div class="modal-body">
-      <p>The rules will pop up here.</p>
-    </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
-    </div>
-  </div>
-</div>
--->
