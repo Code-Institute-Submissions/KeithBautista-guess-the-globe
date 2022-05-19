@@ -8,6 +8,7 @@ var progressBarValue = 10;
 let playerName = "";
 let pointsReceived = 0;
 
+//Inspired by Web Dev Simplified
 let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener('click', startGame);
