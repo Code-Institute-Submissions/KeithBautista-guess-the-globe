@@ -112,6 +112,7 @@
 5. As the site owner I want users to enjoy the game I have created.
 6. As the site owner I want users to have the ability to get in contact with me in case further oportunities arise.
 7. As the site owner I want the users to be able to easily access the site and know their current progress through the questions.
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ## Design Decisions
@@ -119,6 +120,7 @@
 ### Design Choices
 
 This website was created with the idea of space or up in the athmosphere as those are the only times where you are able to see countries as a whole. The hope is to provide a website that is easily accessible.
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ### Color
@@ -126,11 +128,13 @@ This website was created with the idea of space or up in the athmosphere as thos
 For color I have kept it simple with the major colors being a dark shade of blue (#003f64) with aspects of white and black as the majority of the font colors. 
 
 ![Colour Scheme](docs/adobe-color-palette.png)
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ### Fonts 
 
 Mina with from Google Fonts was used for the majority of this project with a fall back of sans serif. Mina was specifically chosen as it slightly imitated characters that you you associate with space and flight.
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ## Structure of Pages
@@ -139,6 +143,7 @@ There are only two html files that this project consists of, index.html as well 
 
 - index.html: This is only a one page site whereby the rest of the content is hidden in modals. Content such as the rules as well as the contact form.
 - 404.html: This is the only other page apart from the index.html. This page consists of an image with 404 written accross it as well as a button below it to be able to return back to the index.html page.
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ## Wireframes
@@ -159,6 +164,7 @@ There are only two html files that this project consists of, index.html as well 
 <summary>404.html Phone</summary>
 <img src="docs/404-html-wf-phone.png">
 </details>
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ## Technologies Used During Creation
@@ -166,6 +172,7 @@ There are only two html files that this project consists of, index.html as well 
 - HTML
 - CSS
 - JavaScript
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ## Frameworks & Tools
@@ -184,6 +191,7 @@ There are only two html files that this project consists of, index.html as well 
 - cloudconvert (Converting Images into WebP Format)
 - Am I Responsive
 - Google Lens
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ## Features
@@ -219,6 +227,7 @@ This website consists of 2 pages. (index.html and 404.html)
 
 - The footer consists of 3 sections, the explore project section, contact developer section and also the copyright section at the bottom of the page.
 ![Footer](docs/features-footer-contact-handles.png)
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ## Validation
@@ -259,6 +268,7 @@ The WAVE WebAIM Accessibility Tool was used to validate and evaluate the accessi
 <summary>404.html</summary>
 <img src="docs/wave-accessibility-404.png">
 </details>
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ## JSHint
@@ -297,6 +307,7 @@ The website was tested on the following devices below:
 - Dell Latitude 7820
 - OnePlus Nord
 - Various Devices were also software tested through Google's Chrome Developer Tool which enables you to toggle the screen size of different devices.
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ## Browser Compatibility
@@ -305,6 +316,7 @@ The website was tested on the following browsers:
 - Google Chrome
 - Brave
 - Microsoft Edge
+
 [Back To **Table of Contents**](#table-of-contents)
 
 ### First Time User
