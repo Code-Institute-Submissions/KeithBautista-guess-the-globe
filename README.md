@@ -239,3 +239,62 @@ The JSHint test initially provided plenty of warnings regarding missing semi col
   "esversion": 6
 }
 the errors will disappear.
+
+## Performance
+
+Tool used was Google Lighthouse which is accessible through the inspect tool, and second to last in its navbar. Like Accessibility, screenshots for performance on each page are below.
+
+<details>
+<summary>index.html</summary>
+<img src="docs/lighthouse-performance-index.png">
+</details>
+<details>
+<summary>404.html</summary>
+<img src="ddocs/lighthouse-performance-404.png">
+</details>
+While Accessibility, Best Practices and SEO are all nearly reaching 100, Performance is 76 which is to be expected due to the amount of images within the questions array. Optimization attempts were to compress each image as well as convert from PNG to WebP which was recommended directly from Google as it was developed by them.
+
+## Performing tests on multiple devices
+
+The website was tested on the following devices below:
+- Dell Latitude 7820
+- OnePlus Nord
+- Various Devices were also software tested through Google's Chrome Developer Tool which enables you to toggle the screen size of different devices.
+
+## Browser Compatibility
+
+The website was tested on the following browsers:
+- Google Chrome
+- Brave
+- Microsoft Edge
+
+## Deployment
+The website was deployed using GitHub Pages by following these steps:
+1. In the GitHub repository navigate to the Settings tab
+2. On the left hand menu select Pages
+3. For the source select Branch: master
+4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is published at https://keithbautista.github.io/guess-the-globe/index.html"
+- Prior to this, I used the GitPod Interface to create the website, please note that GitPod is linked with GitHub which made it easy to make any changes, see changes in real time and also commit and push changes to GitHub.
+
+To fork the following repository
+1. Go to the GitHub repository.
+2. Click on Fork icon in top right hand corner of the page.
+
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code Tab above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone.
+
+## Credits 
+- Web Dev Simplified helped tremendously with understanding further and in depth into creating the quiz.
+- The programs used for images such as pixabay, unsplash, pexels were definitely helpful!
+### Code and Acknowledgements
+- Creating this website meant that I relied on Stack Overflow, W3Schools, Youtube, Bootstrap Documentation and of course the course content for Full Stack Development provided by Code Institute.
+<a href="https://getbootstrap.com/docs/4.1/components/navbar/">Bootstrap</a> used for Navbar, Carousel, Button Format.
+<a href="https://www.w3schools.com/html/default.asp">W3Schools</a> used for Text Formatting, Text-Decoration, Media Queries 
+
+Please be advised that this project is for educational use only and was created for the Code Institute Full Stack Module.
