@@ -26,8 +26,8 @@ function startGame(){
     document.getElementById('progressBar').style.width = (10 + '%')
     document.getElementById('welcomeRulesMessage').innerHTML = `
     <h2>Hello ${playerName}, welcome to the rules page!</h2>`
-    document.getElementById('ogrenwo').innerHTML = `
-    <input type="text" class="form-control" id="inputFullName" value="${playerName}" placeholder="${playerName}" name="Full Name" required>`
+    document.getElementById('firstName').innerHTML = `
+    <input type="text" class="form-control" id="inputFirstName" value="${playerName}" placeholder="${playerName}" name="First Name" required>`
 }
 
 
