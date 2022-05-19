@@ -112,30 +112,26 @@
 5. As the site owner I want users to enjoy the game I have created.
 6. As the site owner I want users to have the ability to get in contact with me in case further oportunities arise.
 7. As the site owner I want the users to be able to easily access the site and know their current progress through the questions.
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Design Decisions
 
 ### Design Choices
 
 This website was created with the idea of space or up in the athmosphere as those are the only times where you are able to see countries as a whole. The hope is to provide a website that is easily accessible.
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ### Color
 
 For color I have kept it simple with the major colors being a dark shade of blue (#003f64) with aspects of white and black as the majority of the font colors. 
 
 ![Colour Scheme](docs/adobe-color-palette.png)
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ### Fonts 
 
 Mina with from Google Fonts was used for the majority of this project with a fall back of sans serif. Mina was specifically chosen as it slightly imitated characters that you you associate with space and flight.
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Structure of Pages
 
@@ -143,8 +139,7 @@ There are only two html files that this project consists of, index.html as well 
 
 - index.html: This is only a one page site whereby the rest of the content is hidden in modals. Content such as the rules as well as the contact form.
 - 404.html: This is the only other page apart from the index.html. This page consists of an image with 404 written accross it as well as a button below it to be able to return back to the index.html page.
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Wireframes
 
@@ -164,16 +159,14 @@ Back To **Table of Contents**](#table-of-contents)
 <summary>404.html Phone</summary>
 <img src="docs/404-html-wf-phone.png">
 </details>
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Technologies Used During Creation
 
 - HTML
 - CSS
 - JavaScript
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Frameworks & Tools
 - Bootstrap v4.6
@@ -191,8 +184,7 @@ Back To **Table of Contents**](#table-of-contents)
 - cloudconvert (Converting Images into WebP Format)
 - Am I Responsive
 - Google Lens
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Features
 
@@ -227,8 +219,7 @@ This website consists of 2 pages. (index.html and 404.html)
 
 - The footer consists of 3 sections, the explore project section, contact developer section and also the copyright section at the bottom of the page.
 ![Footer](docs/features-footer-contact-handles.png)
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Validation
 
@@ -244,8 +235,7 @@ The <a href="https://validator.w3.org/" target="_blank">W3C Markup Validation Se
 <summary>404.html</summary>
 <img src="docs/html-validation-404.png">
 </details>
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ### CSS Validation
 
@@ -255,8 +245,7 @@ The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Valid
 <summary>Style.CSS External Style Sheet</summary>
 <img src="docs/css-validation.png">
 </details>
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Accessibility
 
@@ -270,8 +259,7 @@ The WAVE WebAIM Accessibility Tool was used to validate and evaluate the accessi
 <summary>404.html</summary>
 <img src="docs/wave-accessibility-404.png">
 </details>
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## JSHint
 
@@ -286,8 +274,7 @@ The JSHint test initially provided plenty of warnings regarding missing semi col
   "esversion": 6
 }
 the errors will disappear.
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Performance
 
@@ -302,8 +289,7 @@ Tool used was Google Lighthouse which is accessible through the inspect tool, an
 <img src="docs/lighthouse-performance-404.png">
 </details>
 While Accessibility, Best Practices and SEO are all nearly reaching 100, Performance is 76 which is to be expected due to the amount of images within the questions array. Optimization attempts were to compress each image as well as convert from PNG to WebP which was recommended directly from Google as it was developed by them.
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Performing tests on multiple devices
 
@@ -311,8 +297,7 @@ The website was tested on the following devices below:
 - Dell Latitude 7820
 - OnePlus Nord
 - Various Devices were also software tested through Google's Chrome Developer Tool which enables you to toggle the screen size of different devices.
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Browser Compatibility
 
@@ -320,8 +305,7 @@ The website was tested on the following browsers:
 - Google Chrome
 - Brave
 - Microsoft Edge
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ### First Time User
 
@@ -406,8 +390,7 @@ Back To **Table of Contents**](#table-of-contents)
 <summary>User Story 7 Screenshot</summary>
 <img src="docs/progress-bar.png">
 </details>
-
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
@@ -430,12 +413,14 @@ You can clone the repository by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7. Press Enter to create your local clone.
 
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
+
 ## Credits 
 - Web Dev Simplified helped tremendously with understanding further and in depth into creating the quiz.
 - The programs used for images such as pixabay, unsplash, pexels were definitely helpful!
 
-Back To **Table of Contents**](#table-of-contents)
+[Back To **Table of Contents**](#table-of-contents)
+
 ### Code and Acknowledgements
 - Creating this website meant that I relied on Stack Overflow, W3Schools, Youtube, Bootstrap Documentation and of course the course content for Full Stack Development provided by Code Institute.
 <a href="https://getbootstrap.com/docs/4.1/components/navbar/">Bootstrap</a> used for Navbar, Carousel, Button Format.
