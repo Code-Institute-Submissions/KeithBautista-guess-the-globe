@@ -24,6 +24,8 @@
     2. [Color](#color)
     3. [Fonts](#fonts)
 
+5. [Structure of Pages](#structure-of-pages)
+
 
 ## Project Goals
 
@@ -88,3 +90,10 @@ For color I have kept it simple with the major colors being a dark shade of blue
 ### Fonts 
 
 Mina with from Google Fonts was used for the majority of this project with a fall back of sans serif. Mina was specifically chosen as it slightly imitated characters that you you associate with space and flight.
+
+## Structure of Pages
+
+There are only two html files that this project consists of, index.html as well as the 404.html page.
+
+- index.html: This is only a one page site whereby the rest of the content is hidden in modals. Content such as the rules as well as the contact form.
+- 404.html: This is the only other page apart from the index.html. This page consists of an image with 404 written accross it as well as a button below it to be able to return back to the index.html page.
