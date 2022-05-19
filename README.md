@@ -32,6 +32,13 @@
 
 8. [Frameworks & Tools](#frameworks-&-tools)
 
+9. [Features](#features)
+    1. [Menu and Menu Tabs](#menu-and-menu-tabs)
+    2. [Images](#Images)
+    3. [Contact Us](#contact-us)
+    4. [Footer](#footer)
+    5. [404 Error](#404-error-page)
+
 
 
 ## Project Goals
@@ -146,3 +153,22 @@ There are only two html files that this project consists of, index.html as well 
 - cloudconvert (Converting Images into WebP Format)
 - Am I Responsive
 - Google Lens
+
+## Features
+
+This website consists of 2 pages. (index.html and 404.html)
+
+### Navigation Bar
+
+- The navbar is completely responsive and turns into a toggler (hamburger menu) once the screen becomes too small
+    - It allows the customer to easily navigate the site.
+    - The button for rules, instead of opening a new page, will instead open a modal on the same page.
+
+![Logo and Navbar](docs/features-nav-bar-and-logo.png)
+
+### Images 
+
+- For each question there is an image associated with it using an array. This will update when the button "next question" is pressed.
+- Along with the above, if the correct answer is pressed, the background of each potential answer with either turn green or red depending on if it is correct or wrong.
+
+![Gallery Page](docs/features-images.png)
