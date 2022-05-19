@@ -37,6 +37,7 @@
     2. [Images](#Images)
     3. [Contact Us](#contact-us)
     4. [Footer](#footer)
+    5. [Progress-Bar]
     5. [404 Error](#404-error-page)
 
 
@@ -172,3 +173,13 @@ This website consists of 2 pages. (index.html and 404.html)
 - Along with the above, if the correct answer is pressed, the background of each potential answer with either turn green or red depending on if it is correct or wrong.
 
 ![Gallery Page](docs/features-images.png)
+
+### Contact Us
+
+- The Contact Us page is hidden and only shown when the icon under "contact developer". A modal was used in creating the form. If the x on the top right or if the cursor is clicked outside the card then the contact form will again disappear.
+    ![Contact Form](docs/features-contact-form.png)
+
+### Footer
+
+- The footer consists of 3 sections, the explore project section, contact developer section and also the copyright section at the bottom of the page.
+![Footer](docs/features-footer-contact-handles.png)
