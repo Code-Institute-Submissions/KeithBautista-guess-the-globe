@@ -4,7 +4,7 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const questionImageElement = document.getElementById('question-image')
-var progressBarValue = 0;
+var progressBarValue = 10;
 let playerName = ""
 
 
@@ -23,7 +23,7 @@ function startGame(){
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')//Question Container has hide class, we now remove it to show questions
     setNextQuestion()// Here we set the next question for the user
-    document.getElementById('progressBar').style.width = (0 + '%')
+    document.getElementById('progressBar').style.width = (10 + '%')
 
 }
 
@@ -99,7 +99,7 @@ function setStatusClass(element, correct){
 const questions = [
     {
         question: 'What Country is this?',
-        image: "<img src='assets/images/dominica.png'>",
+        image: "<img src='assets/images/bangladesh.webp'>",
         answers: [
             {text: 'Ireland', correct: true},
             {text: 'Ivory Coast', correct: false},
@@ -110,7 +110,7 @@ const questions = [
     },
     {
         question: 'What Country is this?',
-        image: "<img src='assets/images/dominica.png'>",
+        image: "<img src='assets/images/indonesia.webp'>",
         answers: [
             {text: 'hrteshtrs', correct: true},
             {text: 'htrshtrsht', correct: false},
@@ -121,7 +121,7 @@ const questions = [
     },
     {
         question: 'What Country is this?',
-        image: "<img src='assets/images/dominica.png'>",
+        image: "<img src='assets/images/kazakhstan.webp'>",
         answers: [
             {text: 'htrdhtrdhrtd', correct: true},
             {text: 'j65jytdty jytdytd', correct: false},
@@ -132,7 +132,73 @@ const questions = [
     },
     {
         question: 'What Country is this?',
-        image: "<img src='assets/images/dominica.png'>",
+        image: "<img src='assets/images/laos.webp'>",
+        answers: [
+            {text: 'jytdmy', correct: true},
+            {text: 'mytdmyt ytdfmytdfm', correct: false},
+            {text: 'mytfmytf', correct: false},
+            {text: 'ytfmytfmty', correct: false},
+            
+        ]
+    },
+    {
+        question: 'What Country is this?',
+        image: "<img src='assets/images/lebanon.webp'>",
+        answers: [
+            {text: 'jytdmy', correct: true},
+            {text: 'mytdmyt ytdfmytdfm', correct: false},
+            {text: 'mytfmytf', correct: false},
+            {text: 'ytfmytfmty', correct: false},
+            
+        ]
+    },
+    {
+        question: 'What Country is this?',
+        image: "<img src='assets/images/nepal.webp'>",
+        answers: [
+            {text: 'jytdmy', correct: true},
+            {text: 'mytdmyt ytdfmytdfm', correct: false},
+            {text: 'mytfmytf', correct: false},
+            {text: 'ytfmytfmty', correct: false},
+            
+        ]
+    },
+    {
+        question: 'What Country is this?',
+        image: "<img src='assets/images/netherlands.webp'>",
+        answers: [
+            {text: 'jytdmy', correct: true},
+            {text: 'mytdmyt ytdfmytdfm', correct: false},
+            {text: 'mytfmytf', correct: false},
+            {text: 'ytfmytfmty', correct: false},
+            
+        ]
+    },
+    {
+        question: 'What Country is this?',
+        image: "<img src='assets/images/philippines.webp'>",
+        answers: [
+            {text: 'jytdmy', correct: true},
+            {text: 'mytdmyt ytdfmytdfm', correct: false},
+            {text: 'mytfmytf', correct: false},
+            {text: 'ytfmytfmty', correct: false},
+            
+        ]
+    },
+    {
+        question: 'What Country is this?',
+        image: "<img src='assets/images/romania.webp'>",
+        answers: [
+            {text: 'jytdmy', correct: true},
+            {text: 'mytdmyt ytdfmytdfm', correct: false},
+            {text: 'mytfmytf', correct: false},
+            {text: 'ytfmytfmty', correct: false},
+            
+        ]
+    },
+    {
+        question: 'What Country is this?',
+        image: "<img src='assets/images/thailand.webp'>",
         answers: [
             {text: 'jytdmy', correct: true},
             {text: 'mytdmyt ytdfmytdfm', correct: false},
@@ -200,7 +266,7 @@ onload = function(){
 
 function captureName() {
     //get the start username button
-    let startUsernameButton = document.getElementById('start-username-button');
+    var startUsernameButton = document.getElementById('start-username-button');
     startUsernameButton.addEventListener('click', captureUsername);
     function captureUsername(e) {
         e.preventDefault()
@@ -218,25 +284,3 @@ function captureName() {
         }
     }
 }
-/*End of username Modal*/
-
-/* This is where you place in your name at the very beginning
-
-function usernameProvide(){
-    document.getElementById("game-container").innerHTML = 
-    `
-    <div class="username-menu">
-    <form action ="#">
-        <div class="form">
-        <span id="usernameBackButton" tabindex="0">&times;</span>
-        <span id="usernameError"></span>
-        <label for="name">Enter player name:</label>
-        <input type="text" id="username" name="username">
-        </div>
-        <button type="submit" id="beginBtn">Begin Quiz</button>
-    </form>
-    </div>
-    `;
-}
-
-*/
