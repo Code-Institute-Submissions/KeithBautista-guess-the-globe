@@ -40,6 +40,30 @@
     5. [Progress-Bar](#progress-bar)
     6. [404 Error](#404-error-page)
 
+10. [Validation](#validation)
+    1. [HTML Validation](#html-validation)
+    2. [CSS Validation](#css-validation)
+
+11. [Accessibility](#accessibility)
+
+12. [JSHint](#JSHint)
+
+13. [Performance](#performance)
+
+14. [Performing Tests on Multiple Devices](#performing-tests-on-multiple-devices)
+
+15. [Browser Compatability](#browser-compatability)
+
+16. [Testing User Stories](#testing-user-stories)
+    1. [First Time User](#first-time-user)
+    2. [Returning User](#returning-user)
+    3. [Site Owner](#site-owner)
+
+    16. [Deployment](#deployment)
+
+17. [Credits](#credits)
+    1. [Code and Acknowledgements](#code-and-acknowledgements)
+
 
 
 ## Project Goals
