@@ -28,6 +28,11 @@
 
 6. [Wireframes](#wireframes)
 
+7. [Technologies Used During Creation](#technologies-used-during-creation)
+
+8. [Frameworks & Tools](#frameworks-&-tools)
+
+
 
 ## Project Goals
 
@@ -118,3 +123,26 @@ There are only two html files that this project consists of, index.html as well 
 <summary>404.html Phone</summary>
 <img src="docs/404-html-wf-phone.png">
 </details>
+
+## Technologies Used During Creation
+
+- HTML
+- CSS
+- JavaScript
+
+## Frameworks & Tools
+- Bootstrap v4.6
+- Git
+- Github
+- uizard (wireframes)
+- Google Fonts
+- Adobe Color
+- Font Awesome
+- Favicon.io
+- Unsplash
+- Pexels
+- Pixabay
+- imagecompressor (Compressing Images)
+- cloudconvert (Converting Images into WebP Format)
+- Am I Responsive
+- Google Lens
