@@ -19,6 +19,11 @@
     2. [Returning User](#returning-user)
     3. [Site Owner](#site-owner)
 
+4. [Design Decisions](#design-decisions)
+    1. [Design Choices](#design-choices)
+    2. [Color](#color)
+    3. [Fonts](#fonts)
+
 
 ## Project Goals
 
@@ -67,3 +72,19 @@
 6. As the site owner I want users to enjoy the game I have created.
 7. As the site owner I want users to have the ability to get in contact with me in case further oportunities arise.
 8. As the site owner I want the users to be able to easily access the site and know their current progress through the questions.
+
+## Design Decisions
+
+### Design Choices
+
+This website was created with the idea of space or up in the athmosphere as those are the only times where you are able to see countries as a whole. The hope is to provide a website that is easily accessible.
+
+### Color
+
+For color I have kept it simple with the major colors being a dark shade of blue (#003f64) with aspects of white and black as the majority of the font colors. 
+
+![Colour Scheme](docs/adobe-color-palette.png)
+
+### Fonts 
+
+Mina with from Google Fonts was used for the majority of this project with a fall back of sans serif. Mina was specifically chosen as it slightly imitated characters that you you associate with space and flight.
