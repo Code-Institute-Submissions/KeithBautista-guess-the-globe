@@ -82,13 +82,12 @@
 #### Returning User
 
 4. I want to be able to play the game on any device that I choose, especially my phone.
-5. I want to play the game with friends and family to compare knowledge on flags and countries.
 
 #### Site Owner
 
-6. As the site owner I want users to enjoy the game I have created.
-7. As the site owner I want users to have the ability to get in contact with me in case further oportunities arise.
-8. As the site owner I want the users to be able to easily access the site and know their current progress through the questions.
+5. As the site owner I want users to enjoy the game I have created.
+6. As the site owner I want users to have the ability to get in contact with me in case further oportunities arise.
+7. As the site owner I want the users to be able to easily access the site and know their current progress through the questions.
 
 ## Design Decisions
 
@@ -172,7 +171,7 @@ This website consists of 2 pages. (index.html and 404.html)
 - For each question there is an image associated with it using an array. This will update when the button "next question" is pressed.
 - Along with the above, if the correct answer is pressed, the background of each potential answer with either turn green or red depending on if it is correct or wrong.
 
-![Gallery Page](docs/features-images.png)
+![Images](docs/features-images.png)
 
 ### Contact Us
 
@@ -267,6 +266,91 @@ The website was tested on the following browsers:
 - Google Chrome
 - Brave
 - Microsoft Edge
+
+### First Time User
+
+1. As a first time user I would like to see a simple layout that is easily navigatable.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Navigation Bar | Ability to Navigate among different modals | Links work as expected and routes to a separate modal | Works as expected |
+
+<details>
+<summary>User Story 1 Screenshot</summary>
+<img src="docs/docs/features-nav-bar-and-logo.png">
+</details>
+
+2. As a first time user I would like to know how the game works.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Menu - Rules Modal | Navigate to Navbar and click on "Rules"| Rules modal opens appropriately and also welcomes the name that you have inputted when first fired up | Works as expected |
+
+<details>
+<summary>User Story 2 Screenshot</summary>
+<img src="docs/user-story-2.png">
+</details>
+
+3. As a first time user I would like to know my current progress through the questions.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Progress Bar | Main Page under Questions and Answers | Progress Bar increments by the amount of questions you have gone through already | Works as expected |
+
+<details>
+<summary>User Story 3 Screenshot</summary>
+<img src="docs/progress-bar.png">
+</details>
+
+### Returning User
+
+4. I want to be able to play the game on any device that I choose, especially my phone.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Responsive | Use Phone to access site | Site responds to the size of phone screen | Works as expected |
+
+<details>
+<summary>User Story 4 Screenshot</summary>
+<img src="docs/user-story-4.png">
+</details>
+
+### Site Owner
+
+
+5. As the site owner I want users to enjoy the game I have created.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Images | When name input placed in, you are immediately greeted with an image of a flag | Images pop up when a question is asked, in comparison to plain text. | Works as expected |
+
+<details>
+<summary>User Story 5 Screenshot</summary>
+<img src="docs/features-images.png">
+</details>
+
+6. As the site owner I want users to have the ability to get in contact with me in case further oportunities arise.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact Form | Navigate to footer and click "contact developer" to which you will be able to see a modal pop up with plenty of boxes to input queries | Contact Form Modal is shown | Works as expected |
+
+<details>
+<summary>User Story 6 Screenshot</summary>
+<img src="docs/features-contact-form.png">
+</details>
+
+7. 8. As the site owner I want the users to be able to easily access the site and know their current progress through the questions.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Progress Bar | Navigate immediately underneath the questions and the images and you will find a dynamic progress bar. | When next question is pressed, the progress bar is incremented until the last question is shown | Works as expected |
+
+<details>
+<summary>User Story 7 Screenshot</summary>
+<img src="docs/progress-bar.png">
+</details>
+
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
