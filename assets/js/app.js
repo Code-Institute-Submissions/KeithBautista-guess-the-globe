@@ -8,7 +8,6 @@ var progressBarValue = 10;
 let playerName = ""
 let pointsReceived = 0;
 
-
 let shuffledQuestions, currentQuestionIndex 
 
 startButton.addEventListener('click', startGame)
@@ -25,7 +24,8 @@ function startGame(){
     questionContainerElement.classList.remove('hide')//Question Container has hide class, we now remove it to show questions
     setNextQuestion()// Here we set the next question for the user
     document.getElementById('progressBar').style.width = (10 + '%')
-
+    document.getElementById('welcomeRulesMessage').innerHTML = `
+    <h1>Hello ${playerName} welcome to the rules page!</h1>`
 }
 
 
@@ -288,3 +288,4 @@ function captureName() {
         }
     }
 }
+
