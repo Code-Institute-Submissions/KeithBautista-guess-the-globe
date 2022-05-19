@@ -26,6 +26,8 @@
 
 5. [Structure of Pages](#structure-of-pages)
 
+6. [Wireframes](#wireframes)
+
 
 ## Project Goals
 
@@ -97,3 +99,22 @@ There are only two html files that this project consists of, index.html as well 
 
 - index.html: This is only a one page site whereby the rest of the content is hidden in modals. Content such as the rules as well as the contact form.
 - 404.html: This is the only other page apart from the index.html. This page consists of an image with 404 written accross it as well as a button below it to be able to return back to the index.html page.
+
+## Wireframes
+
+<details>
+<summary>Index.html Web</summary>
+<img src="docs/index-html-wf.png">
+</details>
+<details>
+<summary>404.html Web</summary>
+<img src="docs/404-html-wf.png">
+</details>
+<details>
+<summary>Index.html Phone</summary>
+<img src="docs/index-html-wf-phone.png">
+</details>
+<details>
+<summary>404.html Phone</summary>
+<img src="docs/404-html-wf-phone.png">
+</details>
