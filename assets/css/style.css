@@ -197,3 +197,13 @@ img {
   vertical-align: middle;
 }
 
+#usernameContentModal {
+  width: 25%;
+  align-items: center;
+  font-size: 2rem;
+  padding: 10px
+}
+
+#usernameModalTitle {
+  font-size: 2rem;
+}
